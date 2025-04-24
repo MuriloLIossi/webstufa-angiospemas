@@ -7,5 +7,5 @@ Route::get('/', function () {
 });
 
 Route::get('/informacoes-gerais', function () {
-    return view('/Angiosperm-info\angiosperm-info');
+    return view('/Angiosperm-info/angiosperm-info');
 });
