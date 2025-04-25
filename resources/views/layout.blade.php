@@ -14,14 +14,26 @@
         <a class="nav-link" href="/">Menu inicial</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/informacoes-gerais">Informações gerais</a>
+        <a class="nav-link" href="/informacoes-gerais">Informações de plantas</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
+        <a class="nav-link" href="/informacoes-angiospermas">sobre angiospermas</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      <a class="nav-link" href="/galeria">Galeria de espécies</a>
       </li> 
+      <li class="nav-item">
+      <a class="nav-link" href="/reproducao">Reprodução</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="utilidades">utilidades</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="/game">Joguinho</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="/bibliografia">Bibliografia</a>
+      </li>
     </ul>
   </div>
 </nav>
