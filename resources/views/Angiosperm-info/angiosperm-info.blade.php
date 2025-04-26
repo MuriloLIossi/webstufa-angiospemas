@@ -45,12 +45,12 @@ As angiospermas se dividem em **monocotiledôneas** e **dicotiledôneas**. Abaix
 * **Dicotiledôneas**: Apresentam 2 cotilédones, raízes axiais, folhas com nervuras reticuladas e flores com múltiplos de 4 ou 5.
 
 💚 **As Angiospermas são fascinantes e variam enormemente, desempenhando um papel crucial na biodiversidade do nosso planeta!** 🌍
-    "; // Your test markdown string
+    ";
 
-    // Instantiate Parsedown inside the Blade view's PHP block
+    //Cria uma instancia da classe Parsedown
     $parsedown = new Parsedown();
 
-    // Convert the markdown
+    // Converte o Markdown para HTML
     $htmlString = $parsedown->text($markdownString);
 @endphp
 
@@ -59,11 +59,6 @@ As angiospermas se dividem em **monocotiledôneas** e **dicotiledôneas**. Abaix
 
   {!! $htmlString !!}
 
-
-
-  <!--
-
-  -->
 </div>
 
 @endsection
