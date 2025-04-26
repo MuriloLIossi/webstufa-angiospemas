@@ -2,97 +2,68 @@
 
 @section('content')
 
+@php
+    // You might need to include the namespace if it's not auto-loaded
+    // or just use the fully qualified name \Parsedown
+    //use Parsedown;
+
+    $markdownString = "
+      # 🌸 **Características Gerais das Angiospermas** 🌸
+
+As **angiospermas** são plantas vasculares, o que significa que possuem **xilema** e **floema** (características presentes a partir das **pteridófitas**). Elas possuem **sementes** e, ao contrário de outras categorias de plantas, o grande diferencial é a presença de **fruto** e **flores**. O **fruto** é, na verdade, a flor fecundada e tem a função de **proteção** e de **facilitar a dispersão das sementes**. 🌱
+
+### 💡 Diferenças das Angiospermas em Relação às Gimnospermas
+
+* As angiospermas possuem **dois tegumentos**, **fecundação dupla** e **endosperma triploide**, enquanto nas gimnospermas o endosperma é **haploide**.
+* Sua fase dominante é o **esporófito**.
+* A **polinização** pode ocorrer de diversas formas, devido à presença das flores. Entre os modos de polinização estão:
+    * 🐝 **Insetos**
+    * 🌬️ **Vento**
+    * 🦋 **Animais**
+    * E outros! 🌸
+
+### 🌿 Variedade de Formas
+
+As angiospermas podem ser encontradas em formas variadas, desde **grandes árvores** até **pequenos arbustos**. 🌳
+
+## 🌱 **Monocotiledôneas vs. Dicotiledôneas** 🌱
+
+As angiospermas se dividem em **monocotiledôneas** e **dicotiledôneas**. Abaixo está uma tabela comparando as principais características dessas duas categorias:
+
+| **Característica** | **Monocotiledôneas** 🌾           | **Dicotiledôneas** 🌳                     |
+| :----------------------------- | :------------------------------- | :---------------------------------------- |
+| **Cotilédones na semente** | 1                                | 2                                         |
+| **Tipo de raiz** | Fasciculada (raiz em 'cabelos') 🌿 | Axial (uma raiz principal forte) 🌳         |
+| **Venação das folhas** | Paralela 🌾                       | Reticulada (em forma de rede) 🍃          |
+| **Número de partes da flor** | Múltiplos de 3 (3, 6, 9 pétalas, etc.) 🌸 | Múltiplos de 4 ou 5 (4, 5, 10 pétalas, etc.) 🌺 |
+| **Caule** | Feixes de vasos espalhados       | Feixes de vasos organizados em anel 🌿    |
+| **Exemplos** | Capim, milho, orquídeas, palmeiras 🌽🌻 | Feijão, rosas, carvalho, manga 🌰🌹      |
+
+### 🦋 Resumo:
+
+* **Monocotiledôneas**: Apresentam 1 cotilédone, raízes fasciculadas, folhas com nervuras paralelas e flores com múltiplos de 3.
+* **Dicotiledôneas**: Apresentam 2 cotilédones, raízes axiais, folhas com nervuras reticuladas e flores com múltiplos de 4 ou 5.
+
+💚 **As Angiospermas são fascinantes e variam enormemente, desempenhando um papel crucial na biodiversidade do nosso planeta!** 🌍
+    "; // Your test markdown string
+
+    // Instantiate Parsedown inside the Blade view's PHP block
+    $parsedown = new Parsedown();
+
+    // Convert the markdown
+    $htmlString = $parsedown->text($markdownString);
+@endphp
+
+
 <div class="container mt-5 bg-dark text-light table-bordered ">
 
-  <h1 class="text-center">🌸 <strong>Características Gerais das Angiospermas</strong> 🌸</h1>
+  {!! $htmlString !!}
 
-  <p>As <strong>angiospermas</strong> são plantas vasculares, o que significa que possuem <strong>xilema</strong> e <strong>floema</strong> (características presentes a partir das <strong>pteridófitas</strong>). Elas possuem <strong>sementes</strong> e, ao contrário de outras categorias de plantas, o grande diferencial é a presença de <strong>fruto</strong> e <strong>flores</strong>. O <strong>fruto</strong> é, na verdade, a flor fecundada e tem a função de <strong>proteção</strong> e de <strong>facilitar a dispersão das sementes</strong>. 🌱</p>
 
-  <br>
 
-  <h3>💡 Diferenças das Angiospermas em Relação às Gimnospermas</h3>
+  <!--
 
-  <ul>
-    <li>As angiospermas possuem <strong>dois tegumentos</strong>, <strong>fecundação dupla</strong> e <strong>endosperma triploide</strong>, enquanto nas gimnospermas o endosperma é <strong>haploide</strong>.</li>
-    <li>Sua fase dominante é o <strong>esporófito</strong>.</li>
-    <li>A <strong>polinização</strong> pode ocorrer de diversas formas, devido à presença das flores. Entre os modos de polinização estão:</li>
-    <ul>
-      <li>🐝 <strong>Insetos</strong></li>
-      <li>🌬️ <strong>Vento</strong></li>
-      <li>🦋 <strong>Animais</strong></li>
-      <li>E outros! 🌸</li>
-    </ul>
-  </ul>
-
-  <br>
-
-  <h3>🌿 Variedade de Formas</h3>
-
-  <p>As angiospermas podem ser encontradas em formas variadas, desde <strong>grandes árvores</strong> até <strong>pequenos arbustos</strong>. 🌳</p>
-
-  <br>
-
-  <h2>🌱 <strong>Monocotiledôneas vs. Dicotiledôneas</strong> 🌱</h2>
-
-  <p>As angiospermas se dividem em <strong>monocotiledôneas</strong> e <strong>dicotiledôneas</strong>. Abaixo está uma tabela comparando as principais características dessas duas categorias:</p>
-
-  <br>
-
-  <table class="table bg-dark table-striped">
-    <thead>
-      <tr>
-        <th><strong>Característica</strong></th>
-        <th><strong>Monocotiledôneas</strong> 🌾</th>
-        <th><strong>Dicotiledôneas</strong> 🌳</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><strong>Cotilédones na semente</strong></td>
-        <td>1</td>
-        <td>2</td>
-      </tr>
-      <tr>
-        <td><strong>Tipo de raiz</strong></td>
-        <td>Fasciculada (raiz em "cabelos") 🌿</td>
-        <td>Axial (uma raiz principal forte) 🌳</td>
-      </tr>
-      <tr>
-        <td><strong>Venação das folhas</strong></td>
-        <td>Paralela 🌾</td>
-        <td>Reticulada (em forma de rede) 🍃</td>
-      </tr>
-      <tr>
-        <td><strong>Número de partes da flor</strong></td>
-        <td>Múltiplos de 3 (3, 6, 9 pétalas, etc.) 🌸</td>
-        <td>Múltiplos de 4 ou 5 (4, 5, 10 pétalas, etc.) 🌺</td>
-      </tr>
-      <tr>
-        <td><strong>Caule</strong></td>
-        <td>Feixes de vasos espalhados</td>
-        <td>Feixes de vasos organizados em anel 🌿</td>
-      </tr>
-      <tr>
-        <td><strong>Exemplos</strong></td>
-        <td>Capim, milho, orquídeas, palmeiras 🌽🌻</td>
-        <td>Feijão, rosas, carvalho, manga 🌰🌹</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <br>
-
-  <h3>🦋 Resumo:</h3>
-
-  <ul>
-    <li><strong>Monocotiledôneas</strong>: Apresentam 1 cotilédone, raízes fasciculadas, folhas com nervuras paralelas e flores com múltiplos de 3.</li>
-    <li><strong>Dicotiledôneas</strong>: Apresentam 2 cotilédones, raízes axiais, folhas com nervuras reticuladas e flores com múltiplos de 4 ou 5.</li>
-  </ul>
-
-  <br>
-
-  <p>💚 <strong>As Angiospermas são fascinantes e variam enormemente, desempenhando um papel crucial na biodiversidade do nosso planeta!</strong> 🌍</p>
-
+  -->
 </div>
 
 @endsection
