@@ -6,7 +6,7 @@
     <title>Webstufa Angiospermas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
-  <body class="container mt-4 bg-dark text-light p-4 rounded">
+  <body class="mt-4 bg-dark text-light p-4 rounded">
 
     <header>
       <h1 class="text-center my-4">WebStufa Angiospermas</h1>
@@ -35,7 +35,7 @@
       </div>
     </nav>
 
-    <main class="container">
+    <main class="container container-fluid">
       @yield('content')
     </main>
 
