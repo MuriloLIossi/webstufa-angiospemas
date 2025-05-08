@@ -13,7 +13,7 @@ class Gallery extends Model
         'scientific_name',
         'description',
         'image',
-        'sprite-game',
+        'sprite_game',
     ];
 
 }

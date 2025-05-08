@@ -14,17 +14,11 @@ class GallerySeeder extends Seeder
     public function run(): void
     {
         Gallery::create([
-            'name' => 'Galeria Exemplo',
-            'scientific_name' => 'Nome Científico Exemplo',
-            'description' => 'Descrição da galeria de exemplo.',
-            'image' => 'https://thumbs.dreamstime.com/b/etiqueta-vermelha-do-exemplo-117502755.jpg',
-        ]);
-
-        Gallery::create([
-            'name' => 'Galeria Exemplo 2',
-            'scientific_name' => 'Nome Científico Exemplo 2',
-            'description' => 'Descrição da galeria de exemplo 2.',
-            'image' => 'https://st.depositphotos.com/2935381/4189/i/450/depositphotos_41897159-stock-photo-example-concept.jpg',
+            'name' => 'pé de café',
+            'scientific_name' => 'Coffea',
+            'description' => 'A angiosperma café (gênero Coffea) é uma planta originária da África tropical, amplamente cultivada em regiões tropicais do mundo por seus frutos, que originam uma das bebidas mais consumidas globalmente. Pertencente à família Rubiaceae, o cafeeiro é uma planta arbustiva que produz frutos chamados de "cerejas do café", contendo sementes conhecidas como grãos de café. Além de seu valor econômico, o café é uma planta de flor vistosa, com flores brancas e perfumadas, características típicas das angiospermas — como a presença de flores verdadeiras e frutos que envolvem as sementes. É uma das plantas presentes do game sobre angiospermas.',
+            'image' => 'https://i.postimg.cc/mrF9Djvn/arabica.png',
+            'sprite_game' => 'https://i.postimg.cc/d1jKjPMT/cafe.png',
         ]);
     }
 }

@@ -30,15 +30,29 @@
                         <h2>{{ $selected->name }}</h2>
                     </div>
                     <div class="card-body">
-                        <p><strong>Nome Científico:</strong> {{ $selected->scientific_name }}</p>
-                        <p>{{ $selected->description }}</p>
+    <p><strong>Nome Científico:</strong> {{ $selected->scientific_name }}</p>
+    <p>{{ $selected->description }}</p>
 
-                        @if($selected->image)
-                            <img src="{{ $selected->image }}" alt="{{ $selected->name }}" class="img-fluid">
-                        @else
-                            <p>Imagem não disponível.</p>
-                        @endif
-                    </div>
+    <div class="row">
+        <!-- Imagem principal -->
+        <div class="col-md-6 mb-3">
+            @if($selected->image)
+                <img src="{{ $selected->image }}" alt="{{ $selected->name }}" class="img-fluid rounded border">
+            @else
+                <p>Imagem não disponível.</p>
+            @endif
+        </div>
+
+        <!-- Sprite do jogo -->
+        <div class="col-md-6 mb-3">
+            @if($selected->sprite_game)
+                <img src="{{ $selected->sprite_game }}" alt="Sprite de {{ $selected->name }}" class="img-fluid rounded border">
+            @else
+                <p>Sprite não disponível.</p>
+            @endif
+        </div>
+    </div>
+</div>
                 </div>
             @else
                 <div class="alert alert-info">Selecione uma angiosperma listada para ver os detalhes.</div>
