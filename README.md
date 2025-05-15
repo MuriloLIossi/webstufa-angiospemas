@@ -40,14 +40,26 @@ O WebStufa foi desenvolvido com as seguintes tecnologias:
 ## ⚙️ Configuração Rápida (Ambiente de Desenvolvimento)
 Para facilitar a execução local do projeto, utilizamos um script automatizado na pasta `.vscode`.
 
-### Como rodar:
+### Como instalar:
 1. Pressione `CTRL + Shift + P`
 2. Selecione **Tasks: Run Task**
 3. Escolha **Setup Laravel Project**
+4. Aguarde a instalação do composer
 
 Este script realiza automaticamente:
 - A instalação das dependências (`composer install`)
 - A execução das migrations (`php artisan migrate`)
+
+### Como rodar:
+1. Pressione novamente `CTRL + Shift + P`
+2. Selecione **Tasks: Run Task**
+3. Selecione **Start Laravel Server**
+4. Aguarde o incio do projeto
+
+Este script realiza automaticamente:
+- execução do projeto no padrão `php artisan serve --host=0.0.0.0`
+- abre o servidor php para ser visto por toda a rede atráves do `<ip>:8000`
+
 
 ---
 
