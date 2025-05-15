@@ -8,7 +8,10 @@ use App\Models\Gallery;
 class GalleryController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Exibe uma listagem dos recursos.
+     *
+     * @param int|null $id ID da galeria selecionada (opcional).
+     * @return \Illuminate\View\View Retorna a view com todas as galerias e, se fornecido, a galeria selecionada.
      */
     public function index($id = null)
     {
@@ -18,9 +21,11 @@ class GalleryController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Exibe o recurso especificado.
+     *
+     * @param int $id ID da galeria a ser exibida.
+     * @return \Illuminate\View\View Retorna a view com todas as galerias e a galeria selecionada.
      */
-
    /* public function show($id)
     {
         $galleries = Gallery::all();
