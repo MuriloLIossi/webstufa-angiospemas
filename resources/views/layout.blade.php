@@ -4,16 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Webstufa Angiospermas</title>
+    <link rel="stylesheet" href="{{ asset('css/app.css') }} ")
+">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
-  <body class="mt-4 bg-dark text-light p-4 rounded">
+  <body class=" bg-bege rounded">
 
+    <div class="color-verdem">
     <header>
-      <h1 class="text-center my-4">WebStufa Angiospermas</h1>
+      <a class="text-decoration-none text-light" href="/"><h1 class="text-center">WebStufa Angiospermas</h1></a>
     </header>
 
     <!-- Navbar responsiva -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+    <nav class="navbar navbar-expand-lg color-verdef mb-4">
       <div class="container-fluid">
         <a class="navbar-brand d-lg-none" href="/">WebStufa</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -22,19 +25,19 @@
 
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item active"><a class="nav-link" href="/">Menu inicial</a></li>
-            <li class="nav-item"><a class="nav-link" href="/informacoes-gerais">Informações de plantas</a></li>
-            <li class="nav-item"><a class="nav-link" href="/informacoes-angiospermas">Sobre angiospermas</a></li>
-            <li class="nav-item"><a class="nav-link" href="/galeria">Galeria de espécies</a></li>
-            <li class="nav-item"><a class="nav-link" href="/reproducao">Reprodução</a></li>
-            <li class="nav-item"><a class="nav-link" href="/utilidades">Utilidades</a></li>
-            <li class="nav-item"><a class="nav-link" href="/game">Joguinho</a></li>
-            <li class="nav-item"><a class="nav-link" href="/bibliografia">Bibliografia</a></li>
+            <li class="nav-item active fw-bold"><a class="nav-link" href="/">Menu inicial</a></li>
+            <li class="nav-item fw-bold"><a class="nav-link" href="/informacoes-gerais">Informações de plantas</a></li>
+            <li class="nav-item fw-bold"><a class="nav-link" href="/informacoes-angiospermas">Sobre angiospermas</a></li>
+            <li class="nav-item fw-bold"><a class="nav-link" href="/galeria">Galeria de espécies</a></li>
+            <li class="nav-item fw-bold"><a class="nav-link" href="/reproducao">Reprodução</a></li>
+            <li class="nav-item fw-bold"><a class="nav-link" href="/utilidades">Utilidades</a></li>
+            <li class="nav-item fw-bold"><a class="nav-link" href="/game">Joguinho</a></li>
+            <li class="nav-item fw-bold"><a class="nav-link" href="/bibliografia">Bibliografia</a></li>
           </ul>
         </div>
       </div>
     </nav>
-
+  </div>
     <main class="container container-fluid">
       @yield('content')
     </main>

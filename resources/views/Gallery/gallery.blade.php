@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('content')
-<div class="container mt-5 bg-dark">
+<div class="container mt-5 bg-bege">
     <div class="row">
         <!-- Lista de Galerias -->
         <div class="col-md-4">
@@ -10,7 +10,7 @@
             @if($galleries->isEmpty())
                 <div class="alert alert-warning">Não há exemplos cadastrados.</div>
             @else
-                <ul class="list-group bg-dark text-light">
+                <ul class="list-group bg-bege">
                     @foreach($galleries as $gallery)
                         <li class="list-group-item">
                             <a href="{{ route('gallery.show', $gallery->id) }}" class="text-decoration-none text-dark">
@@ -23,7 +23,7 @@
         </div>
 
         <!-- Detalhes da Galeria -->
-        <div class="col-md-8 bg-dark text-light">
+        <div class="col-md-8 bg-bege">
             @if($selected)
                 <div class="card">
                     <div class="card-header">
@@ -48,7 +48,7 @@
             @if($selected->sprite_game)
                 <img src="{{ $selected->sprite_game }}" alt="Sprite de {{ $selected->name }}" class="img-fluid rounded border">
             @else
-                <p>Sprite não disponível.</p>
+                <!--<p>Sprite não disponível.</p>-->
             @endif
         </div>
     </div>

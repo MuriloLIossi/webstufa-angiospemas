@@ -1,0 +1,39 @@
+:root {
+  --verde-musgo: #6B8E23;
+  --verde-folha-claro: #A9D18E;
+  --marrom-terra: #8B5E3C;
+  --branco: #FFFFFF;
+  --bege-claro: #F5F5DC;
+  --preto-escuro: #1f2329;
+}
+
+
+.bg-bege{
+
+background-color: var(--bege-claro);
+color: var(--preto-escuro);
+
+}
+
+.color-verdem{
+
+  background-color: var(--verde-musgo);
+  color: var(--branco);
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.color-verdef{
+
+  color: var(--preto-escuro);
+  background-color: var(--verde-folha-claro);
+
+}
+
+.marrom{
+
+background-color: var(--marrom-terra);
+color: var(--branco);
+
+}

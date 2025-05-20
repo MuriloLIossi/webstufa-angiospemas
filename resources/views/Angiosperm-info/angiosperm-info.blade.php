@@ -30,15 +30,15 @@
 
 <p>As angiospermas se dividem em <strong>monocotiledôneas</strong> e <strong>dicotiledôneas</strong>. Abaixo está uma tabela comparando as principais características dessas duas categorias:</p>
 
-<table class="table table-striped table-borded table-dark text-light table-hover table-sm" border=1>
-  <thead>
+<table class="table table-striped table-bordered table-hover table-sm" border=1>
+  <thead class="color-verdef">
     <tr>
       <th><strong>Característica</strong></th>
       <th><strong>Monocotiledôneas</strong> 🌾</th>
       <th><strong>Dicotiledôneas</strong> 🌳</th>
     </tr>
   </thead>
-  <tbody>
+  <tbody class="bg-bege color-verdem">
     <tr>
       <td><strong>Cotilédones na semente</strong></td>
       <td>1</td>
