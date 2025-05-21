@@ -1,12 +1,40 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Walter+Turncoat&display=swap');
+
+
 :root {
   --verde-musgo: #6B8E23;
   --verde-folha-claro: #A9D18E;
   --marrom-terra: #8B5E3C;
   --branco: #FFFFFF;
-  --bege-claro: #F5F5DC;
+  --bege-claro: #f0f0e1;
   --preto-escuro: #1f2329;
+  --fonte-verde: #394d12;
+  --links-verde: #8dad77;
 }
 
+.titulo{
+
+color: var(--fonte-verde);
+
+}
+
+.links{
+  color: var(--links-verde) !important;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-color{
+  color: var(--preto-escuro) !important;
+}
+
+.container-font{
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+
+}
 
 .bg-bege{
 
@@ -20,14 +48,18 @@ color: var(--preto-escuro);
   background-color: var(--verde-musgo);
   color: var(--branco);
   width: 100%;
-  padding: 0;
-  margin: 0;
+  padding-top: 20px;
+  margin: 0px;
+  font-family: "Walter Turncoat", cursive;
+
 }
 
 .color-verdef{
 
   color: var(--preto-escuro);
   background-color: var(--verde-folha-claro);
+  margin-top: 0px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 

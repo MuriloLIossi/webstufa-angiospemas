@@ -16,7 +16,7 @@
     </header>
 
     <!-- Navbar responsiva -->
-    <nav class="navbar navbar-expand-lg color-verdef mb-4">
+    <nav class="navbar navbar-expand-lg color-verdef mb-4 mt-4">
       <div class="container-fluid">
         <a class="navbar-brand d-lg-none" href="/">WebStufa</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -25,20 +25,20 @@
 
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item active fw-bold"><a class="nav-link" href="/">Menu inicial</a></li>
-            <li class="nav-item fw-bold"><a class="nav-link" href="/informacoes-gerais">Informações de plantas</a></li>
-            <li class="nav-item fw-bold"><a class="nav-link" href="/informacoes-angiospermas">Sobre angiospermas</a></li>
-            <li class="nav-item fw-bold"><a class="nav-link" href="/galeria">Galeria de espécies</a></li>
-            <li class="nav-item fw-bold"><a class="nav-link" href="/reproducao">Reprodução</a></li>
-            <li class="nav-item fw-bold"><a class="nav-link" href="/utilidades">Utilidades</a></li>
-            <li class="nav-item fw-bold"><a class="nav-link" href="/game">Joguinho</a></li>
-            <li class="nav-item fw-bold"><a class="nav-link" href="/bibliografia">Bibliografia</a></li>
+            <li class="nav-item active fw-bold"><a class="nav-link nav-color" href="/">Menu inicial</a></li>
+            <li class="nav-item fw-bold"><a class="nav-link nav-color" href="/informacoes-gerais">Sobre plantas</a></li>
+            <li class="nav-item fw-bold"><a class="nav-link nav-color" href="/informacoes-angiospermas">Sobre angiospermas</a></li>
+            <li class="nav-item fw-bold"><a class="nav-link nav-color" href="/galeria">Espécies</a></li>
+            <li class="nav-item fw-bold"><a class="nav-link nav-color" href="/reproducao">Reprodução</a></li>
+            <li class="nav-item fw-bold"><a class="nav-link nav-color" href="/utilidades">Utilidades</a></li>
+            <li class="nav-item fw-bold"><a class="nav-link nav-color" href="/game">Joguinho</a></li>
+            <li class="nav-item fw-bold"><a class="nav-link nav-color" href="/bibliografia">Bibliografia</a></li>
           </ul>
         </div>
       </div>
     </nav>
   </div>
-    <main class="container container-fluid">
+    <main class="container container-fluid container-font">
       @yield('content')
     </main>
 
