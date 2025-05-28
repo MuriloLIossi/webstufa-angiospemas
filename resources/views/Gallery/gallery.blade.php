@@ -37,7 +37,7 @@
         <!-- Imagem principal -->
         <div class="col-md-6 mb-3">
             @if($selected->image)
-                <img src="{{ asset('img/real/' . $selected->image) }}" alt="{{ $selected->name }}" class="img-fluid rounded border">
+                <img src="{{ asset('img/real' . $selected->image) }}" alt="{{ $selected->name }}" class="img-fluid rounded border">
             @else
                 <p>Imagem não disponível.</p>
             @endif
@@ -55,7 +55,7 @@
 </div>
                 </div>
             @else
-                <div class="alert alert-info">Selecione uma angiosperma listada para ver os detalhes.</div>
+                <div class="alert alert-warning">Selecione uma angiosperma listada para ver os detalhes.</div>
             @endif
         </div>
     </div>
