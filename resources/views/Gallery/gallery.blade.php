@@ -30,14 +30,14 @@
                         <h2>{{ $selected->name }}</h2>
                     </div>
                     <div class="card-body">
-    <p><strong>Nome Científico:</strong> {{ $selected->scientific_name }}</p>
+    <p><strong>Nome Científico:</strong><em> {{ $selected->scientific_name }}</em></p>
     <p>{{ $selected->description }}</p>
 
     <div class="row">
         <!-- Imagem principal -->
         <div class="col-md-6 mb-3">
             @if($selected->image)
-                <img src="{{ $selected->image }}" alt="{{ $selected->name }}" class="img-fluid rounded border">
+                <img src="{{ asset('img/real/' . $selected->image) }}" alt="{{ $selected->name }}" class="img-fluid rounded border">
             @else
                 <p>Imagem não disponível.</p>
             @endif
@@ -46,7 +46,7 @@
         <!-- Sprite do jogo -->
         <div class="col-md-6 mb-3">
             @if($selected->sprite_game)
-                <img src="{{ $selected->sprite_game }}" alt="Sprite de {{ $selected->name }}" class="img-fluid rounded border">
+                <img src="{{ asset('img/game/' . $selected->sprite_game) }}" alt="Sprite de {{ $selected->name }}" class="img-fluid rounded border">
             @else
                 <!--<p>Sprite não disponível.</p>-->
             @endif
